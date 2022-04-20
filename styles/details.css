@@ -14,7 +14,7 @@ border-radius: 6px;
     color: var(--SmokedGrey);
 }
 .mediaContent img{
-    max-height: 400;
+    max-height: 400px;
     display: flex;
 }
 .detailscontent{
