@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>My First Parcel App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="topNavBar" id="NavBar">
+        <a id="inicio" class="logo">PEC01 - <strong>STAR WARS WEB</strong></a>
+        <a id="menuportada" href="index.html">Portada</a>
+        <a id="menucategory" href="categoria.html">Categorias</a>
+        <a id="menudetail" href="details.html">Detalles</a>
+        <a id="menupresentacion" href="presentacion.html">Presentacion</a>
+        <a id="menuenlaces" href="enlaces.html">Enlaces</a>
+        <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
+            <i class="fa fa-bars"></i></a>
+      </div>
+    </header>
+    <div class="maincontent">
+      <div class="portadacontent">
+            <h2>Presentacion</h2>
+            <p>En esta pagina se va a detallar cada uno de los contenidos del sitio.</p>
+      </div>
+      <div class="portadacontent">
+          <h2>Portada</h2>
+          <p>La pagina de portada es una breve presentacion del sitio.</p>
+          <p>contiene un parrafo de texto explicativo sobre el sentido de la web.</p>
+          <a href="index.html">Portada</a>
+      </div>
+      <div class="portadacontent flex">
+        <div class="panelLeft">
+          <h2>Categorias</h2>
+          <p>En categorias se muestra una lista de las peliculas de forma ordena.</p>
+          <p>se ha utilizado un <strong>timeline vertical</strong> creado por CSS para dotar de sentido cronologico a la saga de peliculas.</p>
+          <P>por cada punto, se muestra un panel con el nombre de la pelicula, una breve descripcion y la caratula,</P>
+          <p>además se ha dejado un boton que lleva directametne a la pagina de detalles </p>
+          <a href="categoria.html">categorias</a>
+        </div>
+        <div class="panelRight">
+          <h2>Detalles</h2>
+          <p>En esta pagina se muestra en formato de tabla una lista con todas las peliculas, con datos basicos para identificar la pelicula y un boton que nos llevara a la pagina de detalles de la pelicula.</p>
+          <p>Esta pagina no tiene mucho sentido en este proyecto, pero se ha dejado como una forma rapida de localizar todas las paginas de detalles</p>
+          <a href="details.html">Detalles</a>
+        </div>
+      </div>
+      <div class="portadacontent flex">
+        <div class="panelLeft">
+          <h2>Peliculas</h2>
+          <p>por cada una de las peliculas se ha dejado una pagina de detalles, en la que se muestra informacion relevante de la pelicula</p>
+          <p>la pagina se ha estructurado en dos bloques</p>
+            <ul>
+              <li>elementos multimedia:  
+                <P>contine la caratula de la pelicula y un trailer insertado desde YouTube</P>
+              </li>
+              <li>Informacion de la pelicula:
+                  <P>panel izquierdo, datos basicos de la pelicula</P>
+                  </P>panel derecho, contine una breve resumen de la pelicula y el texto de entrada de la pelicula</P>
+              </li>
+            </ul>
+        </div>
+        <div class="panelRight">
+          <h2>Detalles de las Peliculas</h2>
+          <li><a href="./details/episodeI.html">STAR WARS - Episodio I</a></li>
+          <li><a href="./details/episodeII.html">STAR WARS - Episodio II</a></li>
+          <li><a href="./details/episodeIII.html">STAR WARS - Episodio III</a></li>
+          <li><a href="./details/episodeIV.html">STAR WARS - Episodio IV</a></li>
+          <li><a href="./details/episodeV.html">STAR WARS - Episodio V</a></li>
+          <li><a href="./details/episodeVI.html">STAR WARS - Episodio VI</a></li>
+          <li><a href="./details/episodeVII.html">STAR WARS - Episodio VII</a></li>
+          <li><a href="./details/episodeVIII.html">STAR WARS - Episodio VIII</a></li>
+          <li><a href="./details/episodeIX.html">STAR WARS - Episodio IX</a></li>
+        </div>
+      </div>
+      <div class="portadacontent">
+        <h2>Enlaces</h2>
+        <p>Pagina con documentacion a las fuentes de donde se ha extraido el contenido de la web</p>
+      </div>
+    </div>
+    </div>
+    <script src="./shared/footer.js" ></script>
+  </body>
+  <script type="module" src="app.js"></script>
+  <script>
+    var menuactivate = document.getElementById("menupresentacion");
+    menuactivate.className ="active";
+
+    function expandMenu() {
+        var x = document.getElementById("NavBar");
+        if(x.className ==="topNavBar"){
+          x.className += " responsive"
+        }else{
+          x.className = "topNavBar";
+        }
+    }
+  </script>
+  
+</html>

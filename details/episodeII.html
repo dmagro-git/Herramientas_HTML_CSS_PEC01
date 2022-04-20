@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>My First Parcel App</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="topNavBar" id="NavBar">
+        <a id="inicio" class="logo">PEC01 - <strong>STAR WARS WEB</strong></a>
+        <a id="menuportada" href="../index.html">Portada</a>
+        <a id="menucategory" href="../categoria.html">Categorias</a>
+        <a id="menudetail" href="../details.html">Detalles</a>
+        <a id="menupresentacion" href="../presentacion.html">Presentacion</a>
+        <a id="menuenlaces" href="../enlaces.html">Enlaces</a>
+        <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
+            <i class="fa fa-bars"></i></a>
+      </div>
+    </header>
+    <div class="maincontent">
+      <div class="detailscontent">
+        <h2 class="detailTitle">STAR WARS :</h2>
+        <h2 class="detailTitle">ATTACK OF THE CLONES</h2>
+      </div>
+      <div class="mediaContent">
+        <div>
+        <figure>
+          <img src="../assets/img/caratulas/SW_EP_II.webp" alt="SW_IV" >
+          <figcaption></figcaption>
+        </figure>
+        </div class="contentRight" >
+        <div class="trailer">
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DywnxIuPtUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="detailscontent">
+        <div class="contentLeft border">
+          <h3>Informacion de la Pelicula</h3>
+          <dl>
+            <dt>Datos de la Pelicula</dt>
+                <dd><strong>Título:</strong> Star Wars: Episode II - Attack of the Clones</dd>
+                <dd><strong>EPISODIO:</strong> II</dd>
+                <dd><strong>Género:</strong> Acción, Aventuras, Fantasía</dd>   
+                <dd><strong>Duración:</strong> 2h 22min</dd>
+                <dd><strong>Fecha de estreno:</strong> 2002 </dd>
+                <dd><strong>Presupuesto:</strong> $120.000.000</dd>
+                <dt>Creditos principales</dt>
+                <dd><strong>Dirección: </strong> George Lucas</dd>
+                <dd><strong>Guión:</strong> George Lucas, Jonathan Hales, John Ostrander </dd>
+                <dd><strong>Reparto principal:</strong> Ewan McGregor, Liam Neeson, Natalie Portman, Hayden Christensen</dd>
+        </dl>
+        </div>
+        <div class="contentRight">
+          <h3>Sobre la pelicula</h3>
+          <p>Tras diez años de su primer encuentro, Anakin Skywalker y 
+            Padmé Amidala disfrutan de un romance prohibido, mientras Obi-Wan Kenobi
+            investiga el intento de asesinato de un senador y 
+            descubre una armada secreta de clones creada por los jedi.</p>
+          <h3>Texto de entrada</h3>
+            <p>En el Senado Galáctico.
+              reina la inquietud. Varios
+              miles de sistemas solares
+              han declarado su intención
+              de abandonar la República.</p>
+
+            <p>Este movimiento separatista,
+              liderado por el misterioso
+              Conde Dooku, ha provocado
+              que al limitado número de
+              Caballeros Jedi les resulte
+              difícil mantener la paz y el
+              orden en la galaxia.</p>
+
+            <p>La senadora Amidala, la
+              antigua reina de Naboo,
+              regresa al Senado Galáctico
+              para dar su voto en la crítica
+              cuestión de crear un
+              EJÉRCITO DE LA REPÚBLICA
+              que ayude a los desbordados
+              Jedi…</p>
+        </div>
+      </div>
+      <button type="button" class="btn default2" ><a href="episodeI.html" >PREVIOUS</a></button>
+      <button type="button" class="btn default2" disabled><a href="../categoria.html#ep2" >BACK</a></button>
+      <button type="button" class="btn default2" ><a href="episodeIII.html" >NEXT</a></button>
+    </div>
+    <script src='../shared/footer.js' ></script>
+
+  </body>
+  <script type="module" src="../app.js"></script>
+  <script>
+      var menuactivate = document.getElementById("menudetail");
+    menuactivate.className ="active";
+
+    function expandMenu() {
+        var x = document.getElementById("NavBar");
+        if(x.className ==="topNavBar"){
+          x.className += " responsive"
+        }else{
+          x.className = "topNavBar";
+        }
+    }
+  </script>
+  
+</html>

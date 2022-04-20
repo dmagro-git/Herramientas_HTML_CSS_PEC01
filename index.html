@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>PEC01 Portada</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="topNavBar" id="NavBar">
+      <a id="inicio" class="logo">PEC01 - <strong>STAR WARS WEB</strong></a>
+      <a id="menuportada" href="index.html">Portada</a>
+      <a id="menucategory" href="categoria.html">Categorias</a>
+      <a id="menudetail" href="details.html">Detalles</a>
+      <a id="menupresentacion" href="presentacion.html">Presentacion</a>
+      <a id="menuenlaces" href="enlaces.html">Enlaces</a>
+      <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
+          <i class="fa fa-bars"></i></a>
+    </div>
+    <div class="maincontent">
+        <div class="portadacontent">
+          <h2>PEC01 - STAR WARS WEB</h2>
+        <figure>
+          <img src="./assets/img/others/inkredo-designer-8eapp1s0knw-unsplash.jpg" alt="SW_IV" >
+          <figcaption>Photo by <a href="https://unsplash.com/@inkredo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Inkredo Designer</a> on <a href="https://unsplash.com/s/photos/star-wars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </figcaption>
+        </figure>
+      </div>
+        <div class="portadacontent">
+            <h2>Sobre la Practica</h2>
+            <p>Para esta practica, se ha generado una pagina responsive, que se puede visualizar correctamente desde cualqueir dispositivo.</p>
+            <p>el contenido de la pagnia se ha basado en la filmografia de la saga de peliculas de Star Wars.</p>
+            <p>para el sitio se ha creado un timeline de toda la saga, ordenadas cronologicamente por episodios</p>
+            <p>Por cada una de las peliculas de la saga se ha añadido una pagina de detalles, con datos de la pelicula, caratula y trailer.</p>
+        </div>
+        <div class="portadacontent">
+          <h2>Enlaces a contenido</h2>
+          <p>para navegar entre paginas se puede utilizar la barra de menu superior</p>
+          <h3>Links directos</h3>
+          <li><a href="categoria.html">Peliculas <strong>Timeline</strong></a></li>
+          <li><a href="./details/episodeI.html">STAR WARS - Episodio I</a></li>
+          <li><a href="./details/episodeII.html">STAR WARS - Episodio II</a></li>
+          <li><a href="./details/episodeIII.html">STAR WARS - Episodio III</a></li>
+          <li><a href="./details/episodeIV.html">STAR WARS - Episodio IV</a></li>
+          <li><a href="./details/episodeV.html">STAR WARS - Episodio V</a></li>
+          <li><a href="./details/episodeVI.html">STAR WARS - Episodio VI</a></li>
+          <li><a href="./details/episodeVII.html">STAR WARS - Episodio VII</a></li>
+          <li><a href="./details/episodeVIII.html">STAR WARS - Episodio VIII</a></li>
+          <li><a href="./details/episodeIX.html">STAR WARS - Episodio IX</a></li>
+          <li><a href="presentacion.html">PRESENTACION</a></li>
+          <li><a href="enlaces.html">ENLACES</a></li>
+        </div> 
+      </div>
+
+    </div>
+     <script src="./shared/footer.js" ></script> 
+  </body>
+  <script type="module" src="app.js"></script>
+  <script>
+    var menuactivate = document.getElementById("menuportada");
+    menuactivate.className ="active";
+    
+    function expandMenu() {
+        var x = document.getElementById("NavBar");
+        if(x.className ==="topNavBar"){
+          x.className += " responsive"
+        }else{
+          x.className = "topNavBar";
+        }
+    }
+  </script>
+  
+</html>

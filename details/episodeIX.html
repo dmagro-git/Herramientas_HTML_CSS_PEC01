@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>My First Parcel App</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="topNavBar" id="NavBar">
+        <a id="inicio" class="logo">PEC01 - <strong>STAR WARS WEB</strong></a>
+        <a id="menuportada" href="../index.html">Portada</a>
+        <a id="menucategory" href="../categoria.html">Categorias</a>
+        <a id="menudetail" href="../details.html">Detalles</a>
+        <a id="menupresentacion" href="../presentacion.html">Presentacion</a>
+        <a id="menuenlaces" href="../enlaces.html">Enlaces</a>
+        <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
+            <i class="fa fa-bars"></i></a>
+      </div>
+    </header>
+    <div class="maincontent">
+      <div class="detailscontent">
+        <h2 class="detailTitle">STAR WARS :</h2>
+        <h2 class="detailTitle">THE RISE OF SKYWALKER</h2>
+      </div>
+      <div class="mediaContent">
+        <div>
+        <figure>
+          <img src="../assets/img/caratulas/SW_EP_IX.jpeg" alt="SW_IX" >
+          <figcaption></figcaption>
+        </figure>
+        </div class="contentRight" >
+        <div class="trailer">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Izme__ZsURY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="detailscontent">
+        <div class="contentLeft border">
+          <h3>Informacion de la Pelicula</h3>
+          <dl>
+            <dt>Datos de la Pelicula</dt>
+                <dd><strong>Título:</strong> Star Wars: Episode IX - The Rise of Skywalker</dd>
+                <dd><strong>EPISODIO:</strong> IX</dd>
+                <dd><strong>Género:</strong> Acción, Aventuras, Fantasía</dd>   
+                <dd><strong>Duración:</strong> 2h 21min</dd>
+                <dd><strong>Fecha de estreno:</strong> 2019 </dd>
+                <dd><strong>Presupuesto:</strong> $275.000.000 </dd>
+            <dt>Creditos principales</dt>
+                <dd><strong>Dirección: </strong> J.J. Abrams</dd>
+                <dd><strong>Guión</strong>Chris Terrio, J.J. Abrams, Derek Connolly</dd>
+                <dd><strong>Reparto principal</strong> Daisy Ridley, John Boyega</dd>
+        </dl>
+        </div>
+        <div class="contentRight">
+          <h3>Sobre la pelicula</h3>
+          <p>Los miembros supervivientes de la Resistencia se enfrentan de nuevo a la 
+            Primera Orden, y el legendario conflicto entre los jedi y 
+            los sith llega a su punto álgido, llevando a la saga Skywalker a su fin.</p>
+
+          <h3>Texto de entrada</h3>
+            <p>¡Los muertos hablan! 
+              La galaxia ha escuchado
+              una transmisión misteriosa,
+              una amenaza de VENGANZA
+              en la siniestra voz del fallecido
+              EMPERADOR PALPATINE.</p>
+
+            <p>LA GENERAL LEIA ORGANA
+              envía agentes secretos a obtener
+              información, mientras que REY,
+              la última esperanza de los Jedi,
+              entrena para luchar en contra 
+              de la diabólica PRIMERA ORDEN.</p>
+
+            <p>Mientras tanto, el Líder Supremo
+              KYLO REN busca furiosamente
+              al Emperador fantasma,
+              dispuesto a destruir cualquier
+              amenaza a su poder....</p>
+        </div>
+      </div>
+      <button type="button" class="btn default2" ><a href="episodeVIII.html" >PREVIOUS</a></button>
+      <button type="button" class="btn default2" ><a href="../categoria.html#ep9" >BACK</a></button>
+    </div>
+    <script src='../shared/footer.js' ></script>
+
+  </body>
+  <script type="module" src="../app.js"></script>
+  <script>
+      var menuactivate = document.getElementById("menudetail");
+    menuactivate.className ="active";
+
+    function expandMenu() {
+        var x = document.getElementById("NavBar");
+        if(x.className ==="topNavBar"){
+          x.className += " responsive"
+        }else{
+          x.className = "topNavBar";
+        }
+    }
+  </script>
+  
+</html>

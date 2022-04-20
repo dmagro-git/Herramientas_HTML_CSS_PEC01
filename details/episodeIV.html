@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>My First Parcel App</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="topNavBar" id="NavBar">
+        <a id="inicio" class="logo">PEC01 - <strong>STAR WARS WEB</strong></a>
+        <a id="menuportada" href="../index.html">Portada</a>
+        <a id="menucategory" href="../categoria.html">Categorias</a>
+        <a id="menudetail" href="../details.html">Detalles</a>
+        <a id="menupresentacion" href="../presentacion.html">Presentacion</a>
+        <a id="menuenlaces" href="../enlaces.html">Enlaces</a>
+        <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
+            <i class="fa fa-bars"></i></a>
+      </div>
+    </header>
+    <div class="maincontent">
+      <div class="detailscontent">
+        <h2 class="detailTitle">STAR WARS :</h2>
+        <h2 class="detailTitle">A NEW HOPE</h2>
+      </div>
+      <div class="mediaContent">
+        <div>
+        <figure>
+          <img src="../assets/img/caratulas/SW_EP_IV.webp" alt="SW_IV" >
+          <figcaption></figcaption>
+        </figure>
+        </div class="contentRight" >
+        <div class="trailer">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/beAH5vea99k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="detailscontent">
+        <div class="contentLeft border">
+          <h3>Informacion de la Pelicula</h3>
+          <dl>
+            <dt>Datos de la Pelicula</dt>
+                <dd><strong>Título:</strong> STAR WARS</dd>
+                <dd><strong>EPISODIO:</strong> IV</dd>
+                <dd><strong>Género:</strong> Acción, Aventuras, Fantasía</dd>   
+                <dd><strong>Duración:</strong> 2h 1min</dd>
+                <dd><strong>Fecha de estreno:</strong> 1977 </dd>
+                <dd><strong>Presupuesto:</strong> $11.000.000 </dd>
+            <dt>Creditos principales</dt>
+                <dd><strong>Dirección: </strong> George Lucas</dd>
+                <dd><strong>Guión</strong> George Lucas</dd>
+                <dd><strong>Reparto principal</strong> Mark Hamill, Harrison Ford, Carrie Fisher</dd>
+        </dl>
+        </div>
+        <div class="contentRight">
+          <h3>Sobre la pelicula</h3>
+          <p>Luke Skywalker une sus fuerzas con un caballero jedi, 
+            un piloto fanfarrón, un wookiee y dos droides para salvar a
+             la galaxia de la estación espacial del Imperio, a la vez que 
+             intenta rescatar a la princesa Leia del malvado Darth Vader.</p>
+          <h3>Texto de entrada</h3>
+          <p>Nos encontramos en un
+              periodo de guerra civil. Las
+              naves espaciales rebeldes,
+              atacando desde una base
+              oculta, han logrado su 
+              primera victoria contra
+              el malvado Imperio
+              Galáctico.</p>
+
+              <p>Durante la batalla, los
+              espías rebeldes han
+              conseguido apoderarse de
+              los planos secretos del
+              arma total y definitiva del
+              Imperio, la ESTRELLA
+              DE LA MUERTE,
+              una estación espacial
+              acorazada, llevando en sí
+              potencia suficiente para
+              destruir a un planeta
+              entero.</p>
+
+              <p>Perseguida por los
+              siniestros agentes del
+              Imperio, la Princesa Leia
+              vuela hacia su patria, a
+              bordo de su nave espacial,
+              llevando consigo los
+              planos robados, que
+              pueden salvar a su pueblo
+              y devolver la libertad a la
+              galaxia…</p>
+        </div>
+      </div>
+      <button type="button" class="btn default2" ><a href="episodeIII.html" >PREVIOUS</a></button>
+      <button type="button" class="btn default2" disabled><a href="../categoria.html#ep4" >BACK</a></button>
+      <button type="button" class="btn default2" ><a href="episodeV.html" >NEXT</a></button>
+    </div>
+    <script src='../shared/footer.js' ></script>
+
+  </body>
+  <script type="module" src="../app.js"></script>
+  <script>
+      var menuactivate = document.getElementById("menudetail");
+    menuactivate.className ="active";
+
+    function expandMenu() {
+        var x = document.getElementById("NavBar");
+        if(x.className ==="topNavBar"){
+          x.className += " responsive"
+        }else{
+          x.className = "topNavBar";
+        }
+    }
+  </script>
+  
+</html>

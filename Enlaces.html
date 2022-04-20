@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>My First Parcel App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <script src='shared/header.js' ></script>
+    <div class="maincontent">
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h2>EPISODE: IV</h2>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            <button class="btn default"><a href="episodeIV.html">Details</a></button>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>EPISODE V:</h2>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            <button class="btn default"><a href="episodeV.html">Details</a></button>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>EPISODE VI:</h2>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            <button class="btn default"><a href="episodeVI.html">Details</a></button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <script src='shared/footer.js' ></script>
+
+  </body>
+  <script type="module" src="app.js"></script>
+  <script>
+    var menuactivate = document.getElementById("menuenlaces");
+    menuactivate.className ="active";
+
+    function expandMenu() {
+        var x = document.getElementById("NavBar");
+        if(x.className ==="topNavBar"){
+          x.className += " responsive"
+        }else{
+          x.className = "topNavBar";
+        }
+    }
+  </script>
+  
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>PEC01 Detalles</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="topNavBar" id="NavBar">
+        <a id="inicio" class="logo">PEC01 - <strong>STAR WARS WEB</strong></a>
+        <a id="menuportada" href="index.html">Portada</a>
+        <a id="menucategory" href="categoria.html">Categorias</a>
+        <a id="menudetail" href="details.html">Detalles</a>
+        <a id="menupresentacion" href="presentacion.html">Presentacion</a>
+        <a id="menuenlaces" href="enlaces.html">Enlaces</a>
+        <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
+            <i class="fa fa-bars"></i></a>
+      </div>
+    </header>
+      <div class="maincontent">
+        <h2 class="maintitle">Film List</h2>
+        <table>
+          <tr>
+            <th>EPISODIO</th>
+            <th>NOMBRE</th>
+            <th>AÑO</th>
+            <th>DETAILS</th>
+          </tr>
+          <tr>
+            <td>EPISODIO I</td>
+            <td>The Phantom Menace</td>
+            <td>1999</td>
+            <td><button class="btn default"><a href="./details/episodeI.html">Details</a></button></td>
+          </tr>
+          <tr>
+            <td>EPISODIO II</td>
+            <td>Attack of the Clones</td>
+            <td>2002</td>
+            <td><button class="btn default2"><a href="./details/episodeII.html">Details</a></button></td>
+          </tr>
+          <tr>
+            <td>EPISODIO III</td>
+            <td>Revenge of the Sith</td>
+            <td>2005</td>
+            <td><button class="btn default"><a href="./details/episodeIII.html">Details</a></button></td>
+          </tr>
+          <tr>
+            <td>EPISODIO IV</td>
+            <td>A New Hope</td>
+            <td>1977</td>
+            <td><button class="btn default2"><a href="./details/episodeIV.html">Details</a></button></td>
+          </tr>
+          <tr>
+            <td>EPISODIO V</td>
+            <td>The Empire Strikes Back</td>
+            <td>1980</td>
+            <td><button class="btn default"><a href="./details/episodeV.html">Details</a></button></td>
+          </tr>
+          <tr>
+            <td>EPISODIO VI</td>
+            <td>Return of the Jedi</td>
+            <td>1983</td>
+            <td><button class="btn default2"><a href="./details/episodeVI.html">Details</a></button></td>
+          </tr>
+          <tr>
+            <td>EPISODIO VII</td>
+            <td> The Force Awakens</td>
+            <td>2015</td>
+            <td><button class="btn default"><a href="./details/episodeVII.html">Details</a></button></td>
+          </tr>
+          <tr>
+            <td>EPISODIO VIII</td>
+            <td>The Last Jedi</td>
+            <td>2017</td>
+            <td><button class="btn default2"><a href="./details/episodeVIII.html">Details</a></button></td>
+          </tr>
+          <tr>
+            <td>EPISODIO IX</td>
+            <td>The Rise of Skywalker</td>
+            <td>2019</td>
+            <td><button class="btn default"><a href="./details/episodeIX.html">Details</a></button></td>
+          </tr>
+        </table>
+      </div>
+    <script src="./shared/footer.js" ></script>
+  </body>
+  <script type="module" src="app.js"></script>
+  <script>
+    var menuactivate = document.getElementById("menudetail");
+    menuactivate.className ="active";
+
+    function expandMenu() {
+        var x = document.getElementById("NavBar");
+        if(x.className ==="topNavBar"){
+          x.className += " responsive"
+        }else{
+          x.className = "topNavBar";
+        }
+    }
+  </script>
+  
+</html>
